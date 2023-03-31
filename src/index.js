@@ -2,34 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import User from './User';
-import ClassComponents from './ClassComponents';
-import FunctionalCoponents from './FunctionalCoponents';
+import User from './Practice-pages/User';
+import ClassComponents from './Practice-pages/ClassComponents';
+import FunctionalCoponents from './Practice-pages/FunctionalCoponents';
 import reportWebVitals from './reportWebVitals';
-import Event from './ButtonEvent';
+import Event from './Practice-pages/ButtonEvent';
 import { ClassicComponentClass } from 'react';
-import FunctionD, { FunctionA, FunctionB, FunctionC, Mul, Add, Sub } from './NewComponents';
-import States from './State';
-
-
-
+import Form from './Practice-pages/FormBasic';
+import FunctionD, { FunctionA, FunctionB, FunctionC, Mul, Add, Sub } from './Practice-pages/NewComponents';
+import States from './Practice-pages/State';
+import About from './Pages/About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <User />
-    <ClassComponents />
-    <FunctionalCoponents />
-    {/* <FunctionA/>
-    <FunctionB/>
-    <FunctionC/>
-    <FunctionD />
-    <Mul/>
-    <Add/>
-    <Sub/> */}
-    <Event />
-    <States />
-  </React.StrictMode>
+<App/>
+</React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
