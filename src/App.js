@@ -14,18 +14,16 @@ import PersistentDrawerLeft from "./DashBoard/DeshBoard-Details";
 import ResponsiveDrawer from "./DashBoard/DeshBoard-Details";
 function App() {
   return (
-    <ResponsiveDrawer />
-
-    // <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/" element={<Base />} />
-    //     <Route path="Signup" element={<Signup />} />
-    //     <Route path="login" element={<Login />} />
-    //     <Route path="about" element={<About />} />
-    //     <Route path="logout" element="This is Url base Routing logout" />
-    //     <Route path="card" element={<CardsTesting />} />
-    //   </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ResponsiveDrawer />} />
+        <Route path="Signup" element={<Signup />} />
+        <Route path="login" element={<Login />} />
+        <Route path="about" element={<About />} />
+        <Route path="logout" element="This is Url base Routing logout" />
+        <Route path="card" element={<CardsTesting />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 export default App;
