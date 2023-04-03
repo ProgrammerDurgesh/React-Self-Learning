@@ -10,13 +10,11 @@ import Base from "./Comnponents/Base";
 import CardsTesting from "./Cards/Testing-cards";
 import DashBoard from "./DashBoard/DeshBoard-Details";
 import MiniDrawer from "./DashBoard/DeshBoard-Details";
-import PersistentDrawerLeft from "./DashBoard/DeshBoard-Details";
-import ResponsiveDrawer from "./DashBoard/DeshBoard-Details";
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ResponsiveDrawer />} />
+        <Route path="/" element={<MiniDrawer />} />
         <Route path="Signup" element={<Signup />} />
         <Route path="login" element={<Login />} />
         <Route path="about" element={<About />} />
